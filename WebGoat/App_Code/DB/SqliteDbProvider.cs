@@ -190,14 +190,14 @@ namespace OWASP.WebGoat.NET.App_Code.DB
                     string sql = "select email from CustomerLogin where customerNumber = " + customerNumber;
                     SqliteCommand command = new SqliteCommand(sql, connection);
                     output = command.ExecuteScalar().ToString();
-                    //*
+                    //*/
                     
                     /*
                     string sql = "select email from CustomerLogin where customerNumber = @customerNumber";
                     SqliteCommand command = new SqliteCommand(sql, connection);
                     command.Parameters.AddWithValue("@customerNumber", customerNumber);
                     output = command.ExecuteScalar().ToString();
-                    //*
+                    //*/
                 } 
             }
             catch (Exception ex)
